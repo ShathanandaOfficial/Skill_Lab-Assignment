@@ -1,125 +1,122 @@
-# GoPushti
+BookMyShow 2.0 - Frontend Clone
 
-Reviving the Indian Cow Breed for a Sustainable Future
+Overview
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Future Roadmap](#future-roadmap)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-- [Contributing](#contributing)
-- [Contact](#contact)
+This project is a frontend clone of BookMyShow, built using React.js with Vite and Bootstrap 5. It replicates the core UI/UX of the popular ticket booking platform, featuring responsive navigation, movie carousels, event listings, and sports event displays.
 
-<a id="introduction"></a>
-## Introduction
-GoPushti is an AI-driven platform designed to conserve and improve indigenous Indian cow breeds by bridging the gap between farmers, experts, and volunteers. By integrating technology with traditional practices, we at GoPushti intend fosters a community-driven approach to promote sustainable agriculture, organic farming, and eco-friendly energy solutions. Our mission aligns with the Kamdhenu Program to empower farmers, enhance breeding programs, and strengthen socio-economic and environmental sustainability.
+Features
 
-<a id="features"></a>
-## Features
+- Responsive Navigation Bar
+  - Logo placement
+  - Menu items (Movies, Events, Sports, Offers)
+  - Search functionality
+  - User profile options
+  - Fully responsive for mobile and desktop views
 
-### 🔒 Secured User Authentication
-- Role-based access for farmers, veterinarians, NGOs, research institutes, and volunteers.
-- Tailored dashboards and functionalities for each user type.
+- Featured Content Carousels
+  - Auto-scrolling movie carousel
+  - Navigation controls
+  - Featured content with call-to-action buttons
 
-### 🤖 AI-Filtered Posts & Verification
-- Gemini AI verifies post relevance (e.g., cow health, breeding tips).
-- Scientific claims require expert verification via a "Verify" button.
-- Top-rated posts are highlighted based on community engagement.
+- Movie Listings Page
+  - Detailed movie cards
+  - Movie information (title, genre, rating, etc.)
+  - Book Now and Watch Trailer buttons
 
-### 💬 Categorized Comment System
-- Comments are segregated by user type (e.g., veterinarians' advice under a separate section).
+- Events & Sports Pages
+  - Upcoming events display
+  - Sports event listings
+  - Venue and pricing information
 
-### 🎥 AI-Verified Webinars
-- Experts can host webinars on cow husbandry, verified by Gemini AI for relevance.
-- Farmers can search and filter webinars by topic, date, or expert.
+- Responsive Design
+  - Works seamlessly across all device sizes
+  - Mobile-friendly layouts
 
-### 🔍 AI-Powered Query Search
-- Farmers submit text/image queries to find solutions.
-- Gemini AI retrieves the top 3 related posts and top 3 relevant webinars.
+Technologies Used
 
-<a id="future-roadmap"></a>
-## Future Roadmap
--  Webinar Registration & Management: Direct sign-up for sessions and expert-led scheduling.
--  AI-Generated Expert Alerts: Unanswered queries are auto-posted and routed to relevant experts.
--  Volunteer Finder: Locate nearby helpers via Google/Gemini-powered suggestions.
--  Nearby Expert Matching: AI-driven recommendations for local experts based on farmer needs.
--  Online Marketplace: Buy/sell cow-related products (e.g., organic manure, Ayurvedic remedies).
--  Multi-language support: Enable various vernacular language speakers with Google API.
+- [React.js](https://reactjs.org/) - JavaScript library for building user interfaces
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [Bootstrap 5](https://getbootstrap.com/) - CSS framework for responsive design
+- [React Router](https://reactrouter.com/) - For client-side routing
 
-<a id="getting-started"></a>
-## Getting Started
+Getting Started
 
-<a id="prerequisites"></a>
-### Prerequisites
-- Web browser (Chrome, Firefox, or Safari recommended)
-- Internet connection
-- Node.js installed (version 16 or higher recommended)
+Prerequisites
 
-<a id="installation"></a>
-## Installation
+- Node.js (v14 or higher)
+- npm (v6 or higher) or yarn
 
+Installation
 
-1. Clone the repository
-bash
-git clone https://github.com/Adhish1612Acharya/Team-Satkriya.git
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ShathanandaOfficial/bookmyshow-clone.git
+   cd bookmyshow-clone
+   ```
 
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. Navigate to project directory
-bash
-cd Team-Satkriya
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
+4. Open your browser and visit:
+   ```
+   http://localhost:5173
+   ```
 
-3. Install dependencies
-bash
-npm install
+Project Structure
 
-
-4. Run development server
-bash
-npm run dev
-
-
-<a id="environment-variables"></a>
-### Environment Variables
-
-Create a .env file in the root directory with the following variables:
-
-env
-# Firebase Configuration
-VITE_API_KEY=your_api_key
-VITE_AUTH_DOMAIN=your_auth_domain
-VITE_PROJECT_ID=your_project_id
-VITE_STORAGE_BUCKET=your_storage_bucket
-VITE_MESSAGING_SENDER_ID=your_sender_id
-VITE_APP_ID=your_app_id
-
-# Cloudinary Configuration
-VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
-VITE_CLOUDINARY_API_KEY=your_api_key
-VITE_CLOUDINARY_API_SECRET=your_api_secret
-
-
-<a id="contributing"></a>
-## Contributing
-We welcome contributions! Please fork the repository and create a pull request with your changes.
-
-<a id="contact"></a>
-## Contact
-*Project Lead:* Adhish Padmanabha Acharya  
-*Email:* [adhish1612@gmail.com](mailto:adhish1612@gmail.com)  
-*Website:* [https://gopushti.netlify.app](https://gopushti.netlify.app)
+```
+src/
+├── assets/            # Static assets (images, etc.)
+├── components/        # Reusable components
+│   ├── Carousel.jsx   # Featured content carousel
+│   ├── MovieCard.jsx  # Individual movie card
+│   ├── Navbar.jsx     # Navigation bar
+│   └── Footer.jsx     # Page footer
+├── pages/             # Application pages
+│   ├── Home.jsx       # Home page
+│   ├── Movies.jsx     # Movies listing
+│   ├── Events.jsx     # Events listing
+│   └── Sports.jsx     # Sports events
+├── App.jsx            # Main application component
+└── main.jsx           # Application entry point
 ```
 
-Key improvements made:
-1. Added anchor tags for each section to enable proper navigation
-2. Organized Git commands under clear headings with proper code blocks
-3. Added copy-paste functionality by using proper Markdown code blocks
-4. Improved the environment variables section with clear formatting
-5. Added Node.js as a prerequisite
-6. Made the contact section more visually distinct
-7. Fixed some formatting inconsistencies
+Customization
 
-The table of contents will now properly link to each section when clicked. The code blocks are now easily copy-pasteable for users.
+To customize this project:
+
+1. Images: Replace placeholder images in `/src/assets` with your own
+2. Content: Modify the data arrays in each page component
+3. Styling: Edit the CSS in `index.css` or add Bootstrap utility classes
+4. Colors: Update the Bootstrap theme colors in `index.css`
+
+Future Enhancements
+
+- [ ] Add dark mode toggle
+- [ ] Implement actual search functionality
+- [ ] Add movie trailer integration
+- [ ] Create ticket booking flow
+- [ ] Add authentication system
+
+Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+Project Link: https://github.com/ShathanandaOfficial/Skill_Lab-Assignment.git
