@@ -60,7 +60,7 @@ GoPushti is an AI-driven platform designed to conserve and improve indigenous In
 - Node.js installed (version 16 or higher recommended)
 
 <a id="installation"></a>
-### Installation
+## Installation
 
 ```bash
 1. Clone the repository
