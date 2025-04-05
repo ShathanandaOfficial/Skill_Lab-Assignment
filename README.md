@@ -62,7 +62,7 @@ GoPushti is an AI-driven platform designed to conserve and improve indigenous In
 <a id="installation"></a>
 ## Installation
 
-```bash
+
 1. Clone the repository
 ```bash
 git clone https://github.com/Adhish1612Acharya/Team-Satkriya.git
